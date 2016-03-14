@@ -15,4 +15,5 @@
     (are [maybe-number number] (= number (string->number maybe-number))
          "0"  0
          "11" 11
-         "1a" nil)))
+         "1a" 1
+         "a"  nil)))
