@@ -10,6 +10,7 @@ lein.bat bin
 on mac/linux:
 
 chmod +x lein.sh
+
 ./lein.sh bin
 
 ## Usage
