@@ -1,9 +1,8 @@
 (ns signal-numbers.core
   (:require [clojure.tools.cli :refer [parse-opts]]
-            [clojure.string :as string])
+            [clojure.string :as string]
+            [signal-numbers.numbers :refer [int->english-words]])
   (:gen-class))
-
-(def int->english-words (partial clojure.pprint/cl-format nil "~r"))
 
 (defn string->number [str]
   (if-let [maybe-number (re-find #"\d+" str)]
