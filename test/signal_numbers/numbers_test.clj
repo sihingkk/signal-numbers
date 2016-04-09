@@ -4,7 +4,8 @@
 
 (deftest number-to-english-word-converter
   (testing "should convert numbers to english words from 0 to 1000"
-    (are [number words] (= words (int->english-words number))
+    (are [number words] (= words (three-digits->words number))
+           -1 nil
             0 "zero"
            11 "eleven"
            20 "twenty"
